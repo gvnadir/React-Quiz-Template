@@ -180,3 +180,68 @@ input[type="checkbox"] {
 	background-color: #dc3545;
 	color: white;
 }
+
+/* Dark Theme: background e testo generale */
+html.dark-theme {
+	background-color: #121212;
+	color: #e0e0e0;
+}
+
+/* App-header (sfondo e testo) */
+html.dark-theme .App-header {
+	background-color: #1e1e1e;
+	color: #e0e0e0;
+}
+
+/* Link chiaro */
+html.dark-theme .App-link {
+	color: #90caf9;
+}
+
+/* Bottoni */
+html.dark-theme .button-container button {
+	background-color: #0d6efd;
+	color: white;
+}
+
+html.dark-theme .button-container button:hover {
+	background-color: #0b5ed7;
+}
+
+/* Submit button */
+html.dark-theme .button-submit-container button,
+html.dark-theme button.submit {
+	background-color: #bb2d3b;
+	color: white;
+}
+
+html.dark-theme .button-submit-container button:hover,
+html.dark-theme button.submit:hover {
+	background-color: #a71d2a;
+}
+
+/* Option label background */
+html.dark-theme .option-label {
+	background-color: #2c2c2c;
+	border-color: #555;
+	color: #e0e0e0;
+}
+
+html.dark-theme .option-label:hover {
+	background-color: #37474f;
+	border-color: #90caf9;
+}
+
+/* Footer */
+html.dark-theme .footer {
+	background-color: #121212;
+	border-top: 1px solid #444;
+}
+
+/* Text-specific dark overrides */
+html.dark-theme .question,
+html.dark-theme .option,
+html.dark-theme .results-container,
+html.dark-theme .time {
+	color: #e0e0e0;
+}

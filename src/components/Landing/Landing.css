@@ -55,3 +55,44 @@
 h2 {
 	text-align: center;
 }
+
+/* Dark Theme - applicato a html o documentElement */
+html.dark-theme {
+	background-color: #121212;
+	color: #e0e0e0;
+}
+
+/* Assicuriamoci che i testi nella landing usino il colore corretto */
+html.dark-theme .landing-container h2,
+html.dark-theme #total-label,
+html.dark-theme #total-questions,
+html.dark-theme .description {
+	color: #e0e0e0;
+}
+
+/* Toggle button container */
+.theme-toggle-container {
+	text-align: right;
+	margin-bottom: 1rem;
+}
+
+/* Toggle button style */
+.theme-toggle-btn {
+	background-color: #444;
+	color: #fff;
+	border: none;
+	padding: 6px 14px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-size: 0.9rem;
+}
+
+.theme-toggle-btn:hover {
+	background-color: #666;
+}
+
+.theme-switcher-container {
+	display: flex;
+	justify-content: center;
+}
