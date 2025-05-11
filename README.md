@@ -4,6 +4,22 @@
 
 This project is a **certification exam simulator** built with [React](https://react.dev/). It's designed to help learners practice for multiple-choice exams in a realistic and interactive environment.
 
+### 🔍 Preview
+
+Here’s what the simulator looks like:
+
+### Landing Page
+![Landing](public/screenshots/landing.png)
+
+### Standard Mode
+![Standard Mode](public/screenshots/standard-mode.png)
+
+### Blind Mode
+![Blind Mode](public/screenshots/blind-mode.png)
+
+### Quiz Results
+![Blind Mode](public/screenshots/quiz-results.png)
+
 #### 🧠 About the Quiz
 
 - You earn **1 point** only if:
@@ -89,3 +105,17 @@ To add a new question:
 	```pwsh
 	npm start
 	```
+
+---
+
+#### ☁️ How to Deploy on Vercel
+
+You can easily deploy this React quiz template using [Vercel](https://vercel.com), a fast and free hosting platform for frontend apps.
+
+##### 🔧 Steps to deploy:
+
+1. Go to [https://vercel.com](https://vercel.com) and sign in with your GitHub account.
+2. Click **"New Project"** and import your fork of this repository.
+3. Vercel will automatically detect the React app and pre-fill the configuration.
+4. Click **"Deploy"**.
+5. After deployment, your quiz simulator will be available at a public URL like:

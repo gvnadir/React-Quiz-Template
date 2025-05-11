@@ -1,14 +1,14 @@
 [
 	{
-		"text": "Which of the following numbers is famously known as \"the answer to the ultimate question of life, the universe, and everything\"?",
+		"text": "Which of the following numbers is famously known as \"The answer to the ultimate question of life, the universe, and everything\"?",
 		"options": [
-			"42",
-			"100",
-			"1",
-			"0"
+			"404 ❓",
+			"42 🧠",
+			"666 😈",
+			"64 🎮"
 		],
 		"correct": [
-			0
+			1
 		]
 	}
 ]
