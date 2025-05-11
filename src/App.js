@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css'
 import rawQuestions from './data/questions.json';
 import Landing from './components/Landing/Landing';
@@ -16,6 +16,7 @@ function App() {
 		() => questions.map(() => [])
 	);
 	const [showResults, setShowResults] = useState(false);
+	const [quizMode, setQuizMode] = useState('standard');
 
 	useEffect(() => {
 		let timer;
@@ -34,7 +35,10 @@ function App() {
 	};
 
 	if (!quizStarted) {
-		return <Landing onStart={() => setQuizStarted(true)} />
+		return <Landing onStart={(mode) => {
+			setQuizMode(mode);
+			setQuizStarted(true);
+		}} />
 	}
 
 	if (showResults) {
@@ -99,12 +103,20 @@ function App() {
 				setShowResults(true);
 			}
 		} else {
-			if (currentAnswerIndex < currentQ.options.length - 1) {
-				setCurrentAnswerIndex(prev => prev + 1);
+			if (quizMode === 'blind') {
+				if (currentAnswerIndex < currentQ.options.length - 1) {
+					setCurrentAnswerIndex(prev => prev + 1);
+				} else {
+					if (currentQuestion < questions.length - 1) {
+						setCurrentQuestion(prevQ => prevQ + 1);
+						setCurrentAnswerIndex(0);
+					} else {
+						setShowResults(true);
+					}
+				}
 			} else {
 				if (currentQuestion < questions.length - 1) {
 					setCurrentQuestion(prevQ => prevQ + 1);
-					setCurrentAnswerIndex(0);
 				} else {
 					setShowResults(true);
 				}
@@ -134,15 +146,29 @@ function App() {
 							</label>
 						))
 					) : (
-						<label className="option-label">
-							<input
-								type="checkbox"
-								value={currentAnswerIndex}
-								checked={selectedAnswers[currentQuestion]?.includes(currentAnswerIndex)}
-								onChange={() => handleSelectOption(currentAnswerIndex, 'checkbox')}
-							/>
-							{currentQ.options[currentAnswerIndex]}
-						</label>
+						quizMode === 'blind' ? (
+							<label className="option-label">
+								<input
+									type="checkbox"
+									value={currentAnswerIndex}
+									checked={selectedAnswers[currentQuestion]?.includes(currentAnswerIndex)}
+									onChange={() => handleSelectOption(currentAnswerIndex, 'checkbox')}
+								/>
+								{currentQ.options[currentAnswerIndex]}
+							</label>
+						) : (
+							currentQ.options.map((option, idx) => (
+								<label key={idx} className="option-label">
+									<input
+										type="checkbox"
+										value={idx}
+										checked={selectedAnswers[currentQuestion]?.includes(idx)}
+										onChange={() => handleSelectOption(idx, 'checkbox')}
+									/>
+									{option}
+								</label>
+							))
+						)
 					)}
 				</div>
 			</div>
