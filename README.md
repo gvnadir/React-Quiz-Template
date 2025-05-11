@@ -9,7 +9,7 @@ This project is a **certification exam simulator** built with [React](https://re
 Here’s what the simulator looks like:
 
 ### Landing Page
-![Landing](public/screenshots/landing.png)
+![Landing](public/screenshots/image.png)
 
 ### Standard Mode
 ![Standard Mode](public/screenshots/standard-mode.png)
