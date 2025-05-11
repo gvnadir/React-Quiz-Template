@@ -1,3 +1,7 @@
+.landing-container {
+	margin: 0 5%;
+}
+
 #total-label,
 #total-questions {
 	text-align: center;
