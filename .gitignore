@@ -1,0 +1,14 @@
+# inside .gitignore (at the root of your project)
+
+# Ignore node_modules and build inside any subfolder
+**/node_modules
+**/build
+**/.pnp
+**/coverage
+
+# Other common ignores
+.DS_Store
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*

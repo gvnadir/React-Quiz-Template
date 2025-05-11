@@ -1,0 +1,57 @@
+.landing-container {
+	margin: 0 15%;
+}
+
+#total-label,
+#total-questions {
+	text-align: center;
+	color: #007bff;
+	color: #007bff;
+	font-weight: bold;
+}
+
+.button-container-landing {
+	text-align: center;
+}
+
+@keyframes floatZoom {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.button-container-landing button {
+	margin-top: 3rem;
+	animation: floatZoom 2s ease-in-out infinite;
+	padding: 12px 24px;
+	background-color: #28a745;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-container-landing button:hover {
+	background-color: #218838;
+	transform: scale(1.05);
+}
+
+.description {
+	text-align: center;
+	font-size: 0.8rem;
+	font-style: italic;
+}
+
+h2 {
+	text-align: center;
+}

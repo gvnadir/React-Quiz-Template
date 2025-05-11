@@ -1,0 +1,182 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.button-container {
+	text-align: center;
+}
+
+.button-container button {
+	padding: 10px 20px;
+	width: 6rem;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-container button:hover {
+	background-color: #0056b3;
+	transform: scale(1.05);
+}
+
+.button-submit-container {
+	display: flex;
+	justify-content: center;
+}
+
+button.submit {
+	background-color: #dc3545;
+	color: white;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.submit:hover {
+	background-color: #c82333;
+	transform: scale(1.05);
+}
+
+.time {
+	font-size: 1.2rem;
+}
+
+.question {
+	font-size: 1.2rem;
+}
+
+.option {
+	font-size: 1.1rem;
+}
+
+.results-container {
+	text-align: center;
+	margin: 0 15px;
+}
+
+h3 {
+	color: #007bff;
+}
+
+.options-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin: 1.5em 0;
+}
+
+.option-label {
+	display: flex;
+	align-items: center;
+	gap: 0.75em;
+	background-color: #f9f9f9;
+	padding: 0.75em 1em;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option-label:hover {
+	background-color: #e6f7ff;
+	border-color: #80d4ff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	transform: scale(1.4);
+	accent-color: #007bff;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0 5%;
+}
+
+@media (min-width: 768px) {
+	.container {
+		margin: 0 15%;
+	}
+}
+
+.content {
+	flex-grow: 1;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	padding: 1rem 0;
+	border-top: 1px solid #ddd;
+	background-color: #fff;
+	position: sticky;
+	bottom: 0;
+}
+
+.button-container button,
+.button-submit-container button {
+	padding: 0.75em 1.5em;
+	font-size: 1rem;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.button-container button {
+	background-color: #007bff;
+	color: white;
+}
+
+.button-submit-container button {
+	background-color: #dc3545;
+	color: white;
+}
