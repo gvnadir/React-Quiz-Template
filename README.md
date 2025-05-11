@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# React Quiz Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🔹 React-Based Certification Quiz Template
 
-## Available Scripts
+This project is a **certification exam simulator** built with [React](https://react.dev/). It's designed to help learners practice for multiple-choice exams in a realistic and interactive environment.
 
-In the project directory, you can run:
+#### 🧠 About the Quiz
 
-### `npm start`
+- You earn **1 point** only if:
+  - You select **all correct answers**
+  - And **none of the incorrect ones**
+- Skipping or selecting incorrectly = **0 points**
+- At the end, you'll see:
+  - Your **total score**
+  - A **detailed review** showing your answers vs the correct ones
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 🎮 Available Quiz Modes
 
-### `npm test`
+- **Standard Mode** – shows all answer options at once (like a real exam)
+- **Blind Mode** – shows one option at a time, helping reduce bias and increase focus
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can switch between modes before starting the quiz.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 🚀 Start the Quiz
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can try the live simulation here: [Start CyberArk Exam Simulator](https://cyberark-exam-simulator.vercel.app/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
+#### 🛠️ How to Run the Quiz Simulator locally
 
-### `npm run eject`
+> Requires: **Node.js** and **Git**  
+> ▸ [Install Node.js](https://nodejs.org/)  
+> ▸ [Install Git](https://git-scm.com/downloads)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Verify Node.js and Git are installed:
+   ```pwsh
+	node -v
+	git
+	 ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Clone the repository:
+	```pwsh
+	git clone https://github.com/gvnadir/React-Quiz-Template.git
+	```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Install dependencies:
+	```pwsh
+	npm install
+	```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the development server:
+	```pwsh
+	npm start
+	```
 
-## Learn More
+5. Open the app in your browser:
+	```pwsh
+	http://localhost:3000
+	```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### ✏️ How to Add or Modify Questions
 
-### Code Splitting
+All quiz questions are stored in the following file:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+`src/data/questions.json`
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To add a new question:
 
-### Making a Progressive Web App
+1. Stop the development server (`Ctrl + C` in your terminal)
+2. Open `questions.json`
+3. Add a new question object to the JSON array using this format:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+	```json
+	{
+		"text": "Your question goes here",
+		"options": ["Answer A", "Answer B", "Answer C", "Answer D"],
+		"correct": [0, 3] 
+	}
+	```
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Restart it by running:
+	```pwsh
+	npm start
+	```

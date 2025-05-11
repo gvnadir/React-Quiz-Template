@@ -12,20 +12,25 @@ const Landing = ({ onStart }) => {
 
 	return (
 		<div className='landing-container'>
-			<h2>SailPoint IIQ Associate Exam Simulator</h2>
+			<h2>Certification Exam Simulator</h2>
 			<h3 id='total-label'>Total Questions: </h3>
 			<h3 id='total-questions'>{questions.length}</h3>
 			<p className='description'>
-				Welcome to the SailPoint IIQ Associate Exam Simulator!
+				Welcome to this certification exam simulator!
 				<br />
-				This is a simulation inspired by the SailPoint IdentityIQ Associate Certification Exam.
+				This quiz simulates the structure and experience of a real-world multiple-choice exam.
 				<br /><br />
-				You'll be presented with one answer at a time for each question.
+				You can choose between two modes:
 				<br />
-				You can choose to either select the answer or skip it using the "Next" button.
+				<strong>Standard Mode</strong> shows all answer options at once, as in a typical exam.
 				<br />
-				The quiz will automatically be submited once all questions and answers have been completed.
-				Alternatively, you can use the "Submit" button at any time to submit early and review your progress.
+				<strong>Blind Mode</strong> reveals one answer option at a time, helping you focus without bias or distraction.
+				<br /><br />
+				You can answer each question or skip it using the "Next" button.
+				<br />
+				The quiz will automatically submit once all questions are completed.
+				<br />
+				Alternatively, you can click "Submit" at any time to finish early and review your progress.
 			</p>
 			<div className="theme-toggle-container">
 				<div className='theme-toggle'>
