@@ -43,7 +43,7 @@ You can switch between modes before starting the quiz.
 
 #### 🚀 Start the Quiz
 
-You can try the live simulation here: [Start CyberArk Exam Simulator](https://cyberark-exam-simulator.vercel.app/)
+You can try the live simulation here: [Start React Quiz Template](https://react-quiz-template.vercel.app/)
 
 ---
 #### 🛠️ How to Run the Quiz Simulator locally
