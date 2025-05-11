@@ -16,7 +16,7 @@ const Landing = ({ onStart }) => {
 			<h3 id='total-label'>Total Questions: </h3>
 			<h3 id='total-questions'>{questions.length}</h3>
 			<p className='description'>
-				Welcome to this certification exam simulator!
+				Welcome to this React Exam Simulator!
 				<br />
 				This quiz simulates the structure and experience of a real-world multiple-choice exam.
 				<br /><br />

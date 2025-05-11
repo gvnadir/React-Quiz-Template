@@ -2,14 +2,14 @@
 
 ### 🔹 React-Based Certification Quiz Template
 
-This project is a **certification exam simulator** built with [React](https://react.dev/). It's designed to help learners practice for multiple-choice exams in a realistic and interactive environment.
+This project is a **Exam Simulator** built with [React](https://react.dev/). It's designed to help learners practice for multiple-choice exams in a realistic and interactive environment.
 
 ### 🔍 Preview
 
 Here’s what the simulator looks like:
 
 ### Landing Page
-![Landing](public/screenshots/landing.png)
+![Landing](public/screenshots/image.png)
 
 ### Standard Mode
 ![Standard Mode](public/screenshots/standard-mode.png)
